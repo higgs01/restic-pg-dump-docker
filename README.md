@@ -31,8 +31,8 @@ Run:
 
 You can also pass the following environment variables to override the defaults:
 
-    -e RESTIC_BACKUP_SCHEDULE='0 * * * *'  # Hourly
-    -e RESTIC_PRUNE_SCHEDULE='0 14 * * 0'  # Sunday midnight, AEST. Use '' to disable.
+    -e BACKUP_SCHEDULE='0 * * * *'  # Hourly
+    -e PRUNE_SCHEDULE='0 14 * * 0'  # Sunday midnight, AEST. Use '' to disable.
     -e PGPORT='5432'
     -e RESTIC_KEEP_HOURLY='24'
     -e RESTIC_KEEP_DAILY='7'
