@@ -1,4 +1,4 @@
-FROM restic/restic:0.16.4
+FROM restic/restic:0.17.3
 
 RUN apk update \
     && apk upgrade \
