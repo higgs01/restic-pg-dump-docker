@@ -27,7 +27,7 @@ Run:
     -e RESTIC_REPOSITORY='s3:s3.amazonaws.com/...' \
     --name restic-pg-dump \
     --restart always \
-    interaction/restic-pg-dump
+    ghcr.io/higgs01/restic-pg-dump-docker
 
 You can also pass the following environment variables to override the defaults:
 
@@ -55,7 +55,7 @@ A `docker-compose.yml` file is provided for convenience.
 
 Create a `.envrc` file from `.envrc.example` and update with your AWS, PostgreSQL and Restic credentials.
 
-    $ wget https://raw.githubusercontent.com/ixc/restic-pg-dump/master/.envrc.example -O .envrc
+    $ wget https://raw.githubusercontent.com/higgs01/restic-pg-dump/master/.envrc.example -O .envrc
 
 Restrict access to `.envrc`, because it contains AWS and restic credentials:
 
