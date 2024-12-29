@@ -1,4 +1,4 @@
-# restic-pg-dump
+# restic-pg-dump 
 
 Docker image that runs `pg_dump` individually for every database on a given server and saves incremental encrypted backups via [restic].
 
