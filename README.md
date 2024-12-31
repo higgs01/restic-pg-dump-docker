@@ -1,5 +1,7 @@
 # restic-pg-dump 
 
+This is a fork of https://github.com/ixc/restic-pg-dump-docker supporting postgres 17
+
 Docker image that runs `pg_dump` individually for every database on a given server and saves incremental encrypted backups via [restic].
 
 By default:
