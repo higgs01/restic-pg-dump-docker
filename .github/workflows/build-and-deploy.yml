@@ -13,7 +13,6 @@ env:
 
 jobs:
   build-deploy:
-    needs: versioning
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
