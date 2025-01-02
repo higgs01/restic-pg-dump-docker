@@ -7,6 +7,7 @@ setup.sh
 echo "Forgetting old snapshots"
 while ! restic forget \
 		--compact \
+		--keep-last="${RESTIC_KEEP_LAST:-1}" \
 		--keep-hourly="${RESTIC_KEEP_HOURLY:-24}" \
 		--keep-daily="${RESTIC_KEEP_DAILY:-7}" \
 		--keep-weekly="${RESTIC_KEEP_WEEKLY:-4}" \
