@@ -15,8 +15,8 @@ RUN wget -nv -O - "https://github.com/jwilder/dockerize/releases/download/v${DOC
 
 ENV PATH="$PATH:/opt/restic-pg-dump/bin"
 
-# ENTRYPOINT ["/sbin/tini", "--", "entrypoint.sh"]
-# CMD ["crond.sh"]
+ENTRYPOINT ["/sbin/tini", "--", "entrypoint.sh"]
+CMD ["crond.sh"]
 
 WORKDIR /opt/restic-pg-dump/
 COPY . /opt/restic-pg-dump/
